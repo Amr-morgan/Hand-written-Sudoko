@@ -1,0 +1,31 @@
+{
+    "dataset_name": "MNIST Handwritten Digits (Subset 1-9)",
+    "source": "Yann LeCun MNIST database",
+    "random_seed": 42,
+    "preprocessing_steps": [
+        "Downloaded standard MNIST dataset.",
+        "Filtered out all samples with label 0.",
+        "Normalized raw uint8 pixel values [0, 255] to float32 range [0.0, 1.0].",
+        "Shuffled and partitioned training images into train and validation sets."
+    ],
+    "image_shape": [
+        28,
+        28
+    ],
+    "label_classes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    ],
+    "split_counts": {
+        "X_train": 44077,
+        "X_val": 10000,
+        "X_test": 9020
+    }
+}
